@@ -110,6 +110,31 @@ const adicionarPet = novoPet => {
 
 // adicionarPet("scooby");
 
+const quantidadeVacina = bancoDeDados => {
+  let quantidadeTrue = 0;
+  let quantidadeFalso = 0;
+   for (let i = 0; i < bancoDeDados.length; i++){
+       if (!bancoDeDados[i].vacinado) {
+           quantidadeFalso+=1;
+       } else {
+           quantidadeTrue+=1;
+       };
+   };
+   console.log(`Foram encontrados ${quantidadeFalso} pets não vacinados e foram encontrados ${quantidadeTrue} pets vacinados.`);
+};
+//quantidadeVacina(bancoDeDados);
+const campanhaVacina = (bancoDeDados, vacinarPet) => {
+  let vacinadosNaCampanha = 0;
+  for (let i = 0; i < bancoDeDados.length; i++){
+      if (!bancoDeDados[i].vacinado) {
+      vacinadosNaCampanha+=1
+      vacinarPet(i);
+      };
+  };
+  console.log(`${vacinadosNaCampanha} pets foram vacinados nessa campanha.`);
+};
+//campanhaVacina(bancoDeDados, vacinarPet);
+
 const tosarPet = pet => {
   pet.servicos.push("tosa");
   console.log(`${pet.nome} está com pêlo aparado!`);
