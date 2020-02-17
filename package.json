@@ -1,0 +1,25 @@
+{
+  "name": "node_modulo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js -w" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrehKenzo/Petshop-DH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrehKenzo/Petshop-DH/issues"
+  },
+  "homepage": "https://github.com/DrehKenzo/Petshop-DH#readme",
+  "dependencies": {
+    "yarn": "^1.22.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
